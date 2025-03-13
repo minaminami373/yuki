@@ -1,0 +1,56 @@
+@use 'foundation' as *;
+
+.about-vision-list {
+  margin-top: 30px;
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
+    row-gap: 60px;
+    column-gap: 60px;
+  }
+}
+
+.about-vision-list__item {
+  @include mq(md) {
+    max-width: 465px;
+  }
+}
+
+.about-vision-list__item:not(:first-child) {
+  margin-top: 25px;
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.about-vision-list__item-number {
+  font-size: 14px;
+  font-weight: $bold;
+  color: $orange;
+  text-align: center;
+  @include mq(md) {
+    font-size: 15px;
+  }
+}
+
+.about-vision-list__item-title {
+  font-size: 20px;
+  font-weight: $bold;
+  text-align: center;
+  margin-top: 10px;
+  @include mq(md) {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+}
+
+.about-vision-list__item-text {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 20px;
+  @include mq(md) {
+    margin-top: 40px;
+    font-size: 15px;
+  }
+}

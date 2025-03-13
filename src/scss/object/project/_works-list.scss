@@ -1,0 +1,79 @@
+@use 'foundation' as *;
+
+.works-list {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 35px;
+  @include mq(md){
+      gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 85px;
+  }
+}
+
+.works-list__item {
+  box-shadow: 0 0 8px $grey;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+.works-list__item:hover {
+  opacity: 0.6;
+}
+
+
+.works-list__item a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $white;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, .05);
+}
+
+.works-list__item-img {
+  width: 100%;
+}
+
+.works-list__item-img img {
+  width: 100%;
+  aspect-ratio: 335/174;
+  object-fit: cover;
+}
+
+.works-list__item-content {
+  padding: 26px 28px;
+  @include mq(md){
+      padding: 31px 30px;
+  }
+}
+
+.works-list__item-title {
+  font-size: 15px;
+  font-weight: $bold;
+  line-height: 1.5;
+  margin-top: 10px;
+  @include mq(md){
+      font-size: 16px;
+  }
+}
+
+.works-list__item-text {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  @include mq(md){
+      font-size: 15px;
+  }
+}
+
+
+.works-list__item-date {
+  color: $grey;
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: $medium;
+  @include mq(md){
+      font-size: 14px;
+  }
+}

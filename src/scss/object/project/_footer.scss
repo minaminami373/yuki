@@ -1,0 +1,52 @@
+@use 'foundation' as *;
+
+.footer {
+  background-color: $brown;
+  color: $white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+.footer__logo {
+  font-size: 36px;
+  font-weight: $bold;
+  padding-top: 50px;
+  text-transform: uppercase;
+  @include mq("md") {
+    padding-top: 100px;
+  }
+}
+
+.footer__items {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: $semi-bold;
+  margin-top: 25px;
+  @include mq("md") {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+}
+
+.footer__item:not(:first-child) {
+  padding-left: 10px;
+  border-left: 1px solid $white;
+}
+
+.footer__item:not(:last-child) {
+  padding-right: 10px;
+}
+
+.footer__copyright {
+  display: block;
+  margin-top: 30px;
+  font-size: 10px;
+  font-weight: $medium;
+  @include mq("md") {
+    margin-top: 70px;
+  }
+}
+

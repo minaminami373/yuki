@@ -1,0 +1,43 @@
+@use 'foundation' as *;
+
+.about-company-list {
+  text-align: center;
+  margin-top: 45px;
+  text-transform: uppercase;
+}
+
+.about-company-list__item {
+  padding-bottom: 15px;
+  border-bottom: 1px solid $grey3;
+  @include mq(md) {
+    display: flex;
+    max-width: 526px;
+    margin: 0 auto;
+  }
+}
+
+.about-company-list__item:not(:first-child) {
+  padding-top: 15px;
+}
+
+.about-company-list__title {
+  color: $orange;
+  font-size: 15px;
+  font-weight: $bold;
+  @include mq(md) {
+    padding-left: 30px;
+    width: 40%;
+    text-align: left;
+
+  }
+
+}
+
+.about-company-list__name {
+  font-size: 15px;
+  font-weight: $medium;
+  margin-top: 10px;
+  @include mq(md) {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>コーディング効率化講座</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="/js/script.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="header layout-header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="index.html">
+          <img src="/images/logo.png" alt="LOGO">
+        </a>
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item">
+            <a href="index.html">top</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="about.html">about</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="works.html">works</a>
+          </li>
+          <li class="header__nav-item header__nav-item--contact btn-contact">
+            <a href="contact.html" target="_blank" rel="noopener">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header__drawer js-drawer">
+        <nav class="header__drawer-nav">
+          <ul class="header__drawer-items">
+            <li class="header__drawer-item">
+              <a href="index.html">top</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="about.html">about</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="works.html">works</a>
+            </li>
+            <li class="header__drawer-item header__drawer-item--contact">
+              <a href="contact.html" target="_blank" rel="noopener">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="mv">
+      <div class="mv__inner">
+        <div class="mv__title-wrap">
+          <h2 class="mv__main-title">Lead to <br class="sp-show"><span>Success</span></h2>
+          <p class="mv__sub-title">クリエイティブな戦略で<br class="md-none">ビジネスを次のステージへ<br>
+            デザインの力で集客をサポート</p>
+        </div>
+        <div class="mv__img">
+          <picture>
+            <source srcset="/images/pc-mv.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+            <img src="/images/sp-mv.jpg" alt="">
+          <picture>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__inner inner">
+        <div class="about__title-wrap title-wrap title-wrap-left">
+          <h3 class="title" data-title="about">about</h3>
+          <p class="sub-title">わたしたちについて</p>
+        </div>
+          <div class="about__img">
+            <img src="/images/about_Image.jpg" alt="">
+          </div>
+          <div class="about__content">
+            <p class="about__text">私たちは、単にWEBサイトを制作するだけでなくお客様のビジネスをより一層発展させることを目指しています。お客様のビジネスにとって最適な解決策を見つけるために、経験豊かな専門家チームが最新技術と情報を駆使して日々取り組んでいます。</p>
+            <div class="about__btn">
+              <a href="about.html" class="btn">view more<span class="dli-arrow-right"></span></a>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="service__inner inner">
+        <div class="service__title-wrap title-wrap title-wrap-center">
+          <h3 class="title title-center" data-title="service">service</h3>
+          <p class="sub-title">事業内容</p>
+        </div>
+        <ul class="service__list service-list">
+          <li class="service-list__item">
+            <div class="service-list__item-img">
+              <img src="/images/service1.jpg" alt="">
+            </div>
+            <div class="service-list__item-count sp-none">
+              <p class="service-list__item-count_number">01</p>
+              <p class="service-list__item-count_title">design</p>
+            </div>
+            <div class="service-list__item-content">
+              <p class="service-list__item-title">web design</p>
+              <p class="service-list__item-subtitle">webデザイン</p>
+              <p class="service-list__item-text">ユーザーが視覚的に魅了されるウェブサイトのデザインを提供しています。<br>洗練されたデザインと使いやすさを融合させ、お客様のニーズに合わせたカスタムデザインを作成しています。<br>そして、様々なデバイスで快適に閲覧できるレスポンシブデザインにも対応しています。</p>
+            </div>
+          </li>
+          <li class="service-list__item">
+            <div class="service-list__item-img">
+              <img src="/images/service2.png" alt="">
+            </div>
+            <div class="service-list__item-count sp-none">
+              <p class="service-list__item-count_number">02</p>
+              <p class="service-list__item-count_title">SNS</p>
+            </div>
+            <div class="service-list__item-content">
+              <p class="service-list__item-title">SNS</p>
+              <p class="service-list__item-subtitle">SNS運用</p>
+              <p class="service-list__item-text">お客様のブランド認知を高めコンバージョンを促進するための効果的な解決策を提供します。<br>適切なSNSプラットフォームを選定し、SNSページのデザインや定期的なコンテンツ投稿なども行ったりSNSキャンペーンの企画と実施もサポートしています。</p>
+            </div>
+          </li>
+          <li class="service-list__item">
+            <div class="service-list__item-img">
+              <img src="/images/service3.jpg" alt="">
+            </div>
+            <div class="service-list__item-count sp-none">
+              <p class="service-list__item-count_number">03</p>
+              <p class="service-list__item-count_title">marketing</p>
+            </div>
+            <div class="service-list__item-content">
+              <p class="service-list__item-title">marketing</p>
+              <p class="service-list__item-subtitle">マーケティング</p>
+              <p class="service-list__item-text">ビジネスの成長を加速するための戦略的なアプローチを考え、お客様のビジネス環境や競合状況を分析し、最適なマーケティング戦略を立案します。<br>そのため、SEO対策やSNSマーケティングはもちろんのこと、広告キャンペーンの設計やデジタルプロモーションの企画など多彩な手法を駆使してお客様のビジネスの成長に貢献します。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="works">
+      <div class="works__inner inner">
+        <div class="works__content">
+          <div class="works__title-wrap title-wrap title-wrap-left">
+            <h3 class="title title--left" data-title="works">works</h3>
+            <p class="sub-title">制作実績</p>
+          </div>
+            <p class="top-works__text works__text">各分野の専門家が集まって高品質かつ迅速な成果物を提供しています。<br>常にお客様のビジネスの成長を追求し、最適なソリューションを提供することをお約束いたします。</p>
+        </div>
+        <ul class="works__list works-list">
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works1.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-03-05">2023.3.5</time>
+                <p class="works-list__item-title">法律広場 様 | コーポレートサイト制作 </p>
+                <p class="works-list__item-text">法律広場 様のデザインから構築、運用までを担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works2.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-03-03">2023.3.3</time>
+                <p class="works-list__item-title">Jurlii 様 | コーポレートサイト制作</p>
+                <p class="works-list__item-text">Jurlii 様のデザインから構築までを担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works3.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-2-24">2023.2.24</time>
+                <p class="works-list__item-title">株式会社show様 | LP制作 </p>
+                <p class="works-list__item-text">株式会社show様 の要件定義から構築までを担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="works__btn">
+          <a href="works.html" class="btn">view more<span class="dli-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="faq__inner inner">
+        <div class="faq__title-wrap title-wrap title-wrap-center">
+          <h3 class="title title-center" data-title="faq">FAQ</h3>
+          <p class="sub-title">よくある質問</p>
+        </div>
+        <ul class="faq__list faq-list">
+          <li class="faq-list__item">
+            <p class="faq-list__item-question js-faq-question"><span>Q.</span>対面での打ち合わせは可能ですか？</p>
+            <p class="faq-list__item-answer"><span>A.</span>はい。感染症対策を徹底しつつ、対面での打ち合わせも可能です。<br>オンライン会議や電話などの遠隔での打ち合わせも選択肢としてご用意しておりますので、お客様のご希望に合わせて柔軟に対応いたします。<br>お気軽にお申し付けください。</p>
+          </li>
+          <li class="faq-list__item">
+            <p class="faq-list__item-question js-faq-question"><span>Q.</span>制作したホームページにはセキュリティ対策が施されていますか？</p>
+            <p class="faq-list__item-answer"><span>A.</span>当社はホームページ制作において、常にセキュリティ対策を重視しております。<br>SSL証明書の導入やファイアウォールの設置などの基本的な対策はもちろん、<br>セキュリティに関する最新技術や情報を常に入手し対策しております。<br>また、ホームページ完成後も定期的に監視・メンテナンスを行い、セキュリティに対するリスクを最小限に抑えるよう努めております。</p>
+          </li>
+          <li class="faq-list__item">
+            <p class="faq-list__item-question js-faq-question"><span>Q.</span>制作したホームページの著作権について教えてください。</p>
+            <p class="faq-list__item-answer"><span>A.</span>当社が制作したホームページには、当社が保有する著作権が発生します。ただし、お客様が希望される場合は、別途契約に基づいて著作権譲渡の手続きを行うことも可能です。著作権に関する詳細は、契約書などで明確に取り決めておりますのでご希望の場合はお問い合わせください。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+      <div class="access">
+        <div class="access__inner inner">
+          <div class="access__map-wrap">
+            <div class="access__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207763.07103716696!2d139.41831505122724!3d35.5463421778204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1688630714995!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="access__info">
+            <address class="access__address">
+              〒123-4567<br>
+              東京都渋谷区1-2-3&emsp;渋谷ビル10F<br>
+              TEL:03-1234-5678<br>
+              FAX:03-1234-5679
+            </address>
+            <div class="access__btn-wrap btn-contact">
+              <a href="#">contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <h2 class="footer__logo">logo</h2>
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item"><a href="index.html" class="footer__link">top</a></li>
+          <li class="footer__item"><a href="about.html" class="footer__link">about</a></li>
+          <li class="footer__item"><a href="works.html" class="footer__link">works</a></li>
+        </ul>
+      </nav>
+    </div>
+    <small class="footer__copyright">&copy;ALL&nbsp;Right&nbsp;Reserved.LOGO.INC</small>
+  </footer>
+</body>
+</html>

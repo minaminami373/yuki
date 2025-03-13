@@ -1,0 +1,39 @@
+@use 'foundation' as *;
+
+.about-company__inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include mq(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.about-company__top-image img {
+  aspect-ratio: 375 / 105;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-company__top-image source {
+  aspect-ratio: 1440 / 350;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-company__inner {
+  background-image: url(/images/about-company-background-image-sp.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  @include mq(md) {
+    background-image: url(/images/about-company-background-image-pc.jpg);
+    max-width: 1440px;
+  }
+}
+
+.about-company-main-title-wrap {
+  text-align: center;
+}
+
+
+

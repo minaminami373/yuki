@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+  <title>コーディング効率化講座</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="/js/script.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="header layout-header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="index.html">
+          <img src="/images/logo.png" alt="LOGO">
+        </a>
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item">
+            <a href="index.html">top</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="about.html">about</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="works.html">works</a>
+          </li>
+          <li class="header__nav-item header__nav-item--contact btn-contact">
+            <a href="index.html" target="_blank" rel="noopener">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header__drawer js-drawer">
+        <nav class="header__drawer-nav">
+          <ul class="header__drawer-items">
+            <li class="header__drawer-item">
+              <a href="index.html">top</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="about.html">about</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="works.html">works</a>
+            </li>
+            <li class="header__drawer-item header__drawer-item--contact">
+              <a href="index.html" target="_blank" rel="noopener">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="contact">
+    <div class="contact__inner">
+      <ol class="contact__status-list">
+        <li class="contact__status-item contact__status-item--current">
+          <p class="contact__status-text">入力</p>
+        </li>
+        <li class="contact__status-item">
+          <p class="contact__status-text">確認</p>
+        </li>
+        <li class="contact__status-item">
+          <p class="contact__status-text">送信完了</p>
+        </li>
+      </ol>
+      <div class="contact__text-wrap">
+        <p class="contact__text">下記のお問い合わせフォームをご記入の上、お問い合わせください。</p>
+      </div>
+      <form class="contact__form" action="">
+        <dl class="contact__form-wrap contact__form-wrap--checkbox">
+          <dt class="contact__form-label">ご要望<span>必須</span></dt>
+          <dd class="contact__form-checkbox">
+            <label><input type="checkbox" name="route" value="資料請求"><span>資料請求</span></label>
+            <label><input type="checkbox" name="route" value="〇〇のお問い合わせ"><span>〇〇のお問い合わせ</span></label>
+            <label><input type="checkbox" name="route" value="お見積もりのご依頼"><span>お見積もりのご依頼</span></label>
+            <label><input type="checkbox" name="route" value="その他"><span>その他</span></label>
+          </dd>
+        </dl>
+        <dl class="contact__form-wrap">
+          <dt class="contact__form-label">お名前<span>必須</span></dt>
+          <dd class="contact__form-input">
+            <input type="text" placeholder="例）山田 太郎">
+          </dd>
+        </dl>
+        <dl class="contact__form-wrap">
+          <dt class="contact__form-label">会社名<span>必須</span></dt>
+          <dd class="contact__form-input">
+            <input type="text" placeholder="例）学サポ株式会社">
+          </dd>
+        </dl>
+        <dl class="contact__form-wrap">
+          <dt class="contact__form-label">電話番号</dt>
+          <dd class="contact__form-input">
+            <input type="tel" placeholder="例）09012345678">
+          </dd>
+        </dl>
+        <dl class="contact__form-wrap">
+          <dt class="contact__form-label">メールアドレス</dt>
+          <dd class="contact__form-input">
+            <input type="email" placeholder="例）sample@sample.com">
+          </dd>
+        </dl>
+        <dl class="contact__form-wrap">
+          <dt class="contact__form-label">ご住所</dt>
+          <dd class="contact__form-input">
+            <input type="text" placeholder="例）島根県松江市朝日町〇〇">
+          </dd>
+        </dl>
+        <dl class="contact__form-wrap">
+          <dt class="contact__form-label">お問い合わせ内容<span>必須</span></dt>
+          <dd class="contact__form-textarea">
+            <textarea name="message" placeholder="ご自由にご記入ください。"></textarea>
+          </dd>
+        </dl>
+        <div class="contact__form-privacy">
+          <label>
+            <input type="checkbox" name="privacy-policy" value="agree">
+            <span><a href="#">個人情報保護方針</a>に同意する。</span>
+          </label>
+        </div>
+        <div class="contact__form-submit">
+          <input type="submit" value="送信">
+          <div class="contact__form-submit-bg"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <h2 class="footer__logo">logo</h2>
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item"><a href="index.html" class="footer__link">top</a></li>
+          <li class="footer__item"><a href="about.html" class="footer__link">about</a></li>
+          <li class="footer__item"><a href="works.html" class="footer__link">works</a></li>
+        </ul>
+      </nav>
+    </div>
+    <small class="footer__copyright">&copy;ALL&nbsp;Right&nbsp;Reserved.LOGO.INC</small>
+  </footer>
+</body>
+</html>

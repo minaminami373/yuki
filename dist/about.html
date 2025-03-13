@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>コーディング効率化講座</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="/js/script.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="header layout-header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="index.html">
+          <img src="/images/logo.png" alt="LOGO">
+        </a>
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item">
+            <a href="index.html">top</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="about.html">about</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="works.html">works</a>
+          </li>
+          <li class="header__nav-item header__nav-item--contact btn-contact">
+            <a href="index.html" target="_blank" rel="noopener">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header__drawer js-drawer">
+        <nav class="header__drawer-nav">
+          <ul class="header__drawer-items">
+            <li class="header__drawer-item">
+              <a href="index.html">top</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="about.html">about</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="works.html">works</a>
+            </li>
+            <li class="header__drawer-item header__drawer-item--contact">
+              <a href="index.html" target="_blank" rel="noopener">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="mv main-mv">
+      <div class="mv__inner main-mv__inner">
+        <div class="mv__title-wrap main-mv__title-wrap">
+          <h2 class="mv__main-title main-mv__main-title">about</h2>
+          <p class="mv__sub-title main-mv__sub-title">会社概要</p>
+        </div>
+        <div class="mv__img">
+          <picture>
+            <source srcset="/images/main-about.mv.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+            <img src="/images/main-about.mv-sp.jpg" alt="">
+          <picture>
+        </div>
+      </div>
+    </section>
+    <div class="about-top">
+      <div class="about-top__inner inner">
+          <div class="about-top__img">
+            <img src="/images/about-top1.jpg" alt="">
+          </div>
+          <div class="about-top__content">
+            <p class="about-top__title">お客様のビジネスを<br>より一層発展させることを目指して</p>
+            <p class="about-top__text">私たちは、単にWEBサイトを制作するだけでなくお客様のビジネスをより一層発展させることを目指しています。お客様のビジネスにとって最適な解決策を見つけるために、経験豊かな専門家チームが最新技術と情報を駆使して日々取り組んでいます。</p>
+          </div>
+          <div class="about-top__img">
+            <img src="/images/about-top2.jpg" alt="">
+          </div>
+      </div>
+    </div>
+    <div class="about-background">
+    <section class="about-vision">
+      <div class="about-vision__inner inner">
+        <div class="main-title-wrap">
+          <h2 class="main-title"><span class="main-title-orange">v</span>ision</h2>
+        </div>
+        <ul class="about-vision__list about-vision-list">
+          <li class="about-vision-list__item">
+            <p class="about-vision-list__item-number">#&nbsp;01</p>
+            <p class="about-vision-list__item-title">顧客のビジネス成長を支援する</p>
+            <p class="about-vision-list__item-text">顧客の課題や目的に合わせて最適な施策や提案を行い、ニーズに合わせた最高品質のサービスを提供します。</p>
+          </li>
+          <li class="about-vision-list__item">
+            <p class="about-vision-list__item-number">#&nbsp;02</p>
+            <p class="about-vision-list__item-title">品質やクオリティの向上</p>
+            <p class="about-vision-list__item-text">クライアント企業や顧客から信頼されるサービスを提供するために、最新技術や情報を駆使して常に革新的なアイデアを追求し続けます。</p>
+          </li>
+          <li class="about-vision-list__item">
+            <p class="about-vision-list__item-number">#&nbsp;03</p>
+            <p class="about-vision-list__item-title">プロフェッショナリズム</p>
+            <p class="about-vision-list__item-text">専門知識と経験豊富なスタッフが、お客様のビジネスを最適化するためのサポートを提供します。</p>
+          </li>
+          <li class="about-vision-list__item">
+            <p class="about-vision-list__item-number">#&nbsp;04</p>
+            <p class="about-vision-list__item-title">社会的責任</p>
+            <p class="about-vision-list__item-text">環境保護や社会貢献活動を通じて社会的な問題にも取り組み、企業価値の向上と社会貢献を実現します。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about-message">
+      <div class="about-message__inner inner">
+        <div class="about-message__wrap">
+          <div class="about-message-main-title-wrap main-title-wrap">
+            <h2 class="main-title"><span class="main-title-orange">m</span>essage</h2>
+          </div>
+          <div class="about-message__img">
+            <img src="/images/about-message.jpg" alt="">
+          </div>
+          <div class="about-message__content">
+            <p class="about-message__title">お客様の課題を<br>根本的に解決する</p>
+              <p class="about-message__text">私たちは、お客様のニーズに合わせた最高品質のサービスを提供し、お客様のビジネスの発展に貢献することを目指しています。専門知識と経験豊富なスタッフが、お客様のビジネスを最適化するためのサポートを提供します。<br>未来に向けて、一人ひとりが持つ可能性を活かし、社会の発展に寄与していくことをお約束します。</p>
+              <p class="about-message__name">代表取締役&emsp;佐々本&emsp;学</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <section class="about-company">
+      <picture class="about-company__top-image">
+        <source srcset="/images/about-company-pc.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+        <img src="/images/about-company-sp.jpg" alt="">
+      </picture>
+      <div class="about-company__inner inner">
+        <div class="about-company-main-title-wrap main-title-wrap">
+          <h2 class="main-title"><span class="main-title-orange">c</span>ompany</h2>
+        </div>
+        <ul class="about-company__list about-company-list">
+          <li class="about-company-list__item">
+            <p class="about-company-list__title">会社名</p>
+            <p class="about-company-list__name">logo</p>
+          </li>
+          <li class="about-company-list__item">
+            <p class="about-company-list__title">住所</p>
+            <p class="about-company-list__name">東京都渋谷区1-2-3&emsp;渋谷ビル10F</p>
+          </li>
+          <li class="about-company-list__item">
+            <p class="about-company-list__title">電話番号</p>
+            <p class="about-company-list__name">03-1234-5678</p>
+          </li>
+          <li class="about-company-list__item">
+            <p class="about-company-list__title">代表</p>
+            <p class="about-company-list__name">佐々本&emsp;学</p>
+          </li>
+          <li class="about-company-list__item">
+            <p class="about-company-list__title">設立日</p>
+            <p class="about-company-list__name">2021年11月</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+      <div class="access">
+        <div class="access__inner inner">
+          <div class="access__map-wrap">
+            <div class="access__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207763.07103716696!2d139.41831505122724!3d35.5463421778204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1688630714995!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="access__info">
+            <address class="access__address">
+              〒123-4567<br>
+              東京都渋谷区1-2-3&emsp;渋谷ビル10F<br>
+              TEL:03-1234-5678<br>
+              FAX:03-1234-5679
+            </address>
+            <div class="access__btn-wrap btn-contact">
+              <a href="#">contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <h2 class="footer__logo">logo</h2>
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item"><a href="index.html" class="footer__link">top</a></li>
+          <li class="footer__item"><a href="about.html" class="footer__link">about</a></li>
+          <li class="footer__item"><a href="works.html" class="footer__link">works</a></li>
+        </ul>
+      </nav>
+    </div>
+    <small class="footer__copyright">&copy;ALL&nbsp;Right&nbsp;Reserved.LOGO.INC</small>
+  </footer>
+</body>
+</html>

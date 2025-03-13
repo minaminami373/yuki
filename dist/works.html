@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>コーディング効率化講座</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+
+    <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="header layout-header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="index.html">
+          <img src="/images/logo.png" alt="LOGO">
+        </a>
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item">
+            <a href="index.html">top</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="about.html">about</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="works.html">works</a>
+          </li>
+          <li class="header__nav-item header__nav-item--contact btn-contact">
+            <a href="index.html" target="_blank" rel="noopener">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header__drawer js-drawer">
+        <nav class="header__drawer-nav">
+          <ul class="header__drawer-items">
+            <li class="header__drawer-item">
+              <a href="index.html">top</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="about.html">about</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="works.html">works</a>
+            </li>
+            <li class="header__drawer-item header__drawer-item--contact">
+              <a href="index.html" target="_blank" rel="noopener">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="mv main-mv">
+      <div class="mv__inner main-mv__inner">
+        <div class="mv__title-wrap main-mv__title-wrap">
+          <h2 class="mv__main-title main-mv__main-title">works</h2>
+          <p class="mv__sub-title main-mv__sub-title">制作実績</p>
+        </div>
+        <div class="mv__img">
+          <picture>
+            <source srcset="/images/about-works-mv-pc.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+            <img src="/images/about-works-mv.jpg" alt="">
+          <picture>
+        </div>
+      </div>
+    </section>
+    <section class="main-works works">
+      <div class="works__inner inner">
+        <div class="works__content">
+          <div class="main-title-wrap">
+            <h2 class="main-title"><span class="main-title-orange">w</span>orks</h2>
+          </div>
+            <p class="main-works__text works__text">各分野の専門家が集まって高品質かつ迅速な成果物を提供しています。<br>常にお客様のビジネスの成長を追求し、最適なソリューションを提供することをお約束いたします。</p>
+        </div>
+        <ul class="works__list works-list">
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works1.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-03-05">2023.3.5</time>
+                <p class="works-list__item-title">法律広場 様 | コーポレートサイト制作 </p>
+                <p class="works-list__item-text">法律広場 様のデザインから構築、運用までを担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works2.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-03-03">2023.3.3</time>
+                <p class="works-list__item-title">Jurlii 様 | コーポレートサイト制作</p>
+                <p class="works-list__item-text">Jurlii 様のデザインから構築までを担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works3.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-2-24">2023.2.24</time>
+                <p class="works-list__item-title">株式会社show様 | LP制作</p>
+                <p class="works-list__item-text">株式会社show様 の要件定義から構築までを担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works4.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-2-24">2023.2.24</time>
+                <p class="works-list__item-title">ゆあさ制作様 | WEBサイト制作</p>
+                <p class="works-list__item-text">ゆあさ商店様のデザインから構築までを担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works5.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-2-24">2023.2.24</time>
+                <p class="works-list__item-title">YOU株式会社様 | コーポレートサイト制作</p>
+                <p class="works-list__item-text">YOU株式会社様のデザインから構築までを担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works5.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-2-24">2023.2.24</time>
+                <p class="works-list__item-title">YOU株式会社様 | SNS運用</p>
+                <p class="works-list__item-text">YOU株式会社様のTwitterやInstagramの運用を担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works7.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-2-24">2023.2.24</time>
+                <p class="works-list__item-title">ChillCafe 様 | WEBサイト制作</p>
+                <p class="works-list__item-text">ChillCafe 様のデザインから構築、運用までを担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works8.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-2-24">2023.2.24</time>
+                <p class="works-list__item-title">M’s cafe 様 | WEBサイト制作</p>
+                <p class="works-list__item-text">M’s cafe 様のデザインから構築までを担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="works-list__item">
+            <a href="#">
+              <div class="works-list__item-img">
+                <img src="/images/works9.jpg" alt="省略">
+              </div>
+              <div class="works-list__item-content">
+                <time class="works-list__item-date" datetime="2023-2-24">2023.2.24</time>
+                <p class="works-list__item-title">GACK Salon 様 | WEBサイト制作</p>
+                <p class="works-list__item-text">GACK Salon様 のデザインから構築までを 担当させていただきました。</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="pagenavi">
+          <div class="pagenavi__inner">
+            <!-- WP-PageNaviで出力される部分 ここから -->
+            <div class='wp-pagenavi' role='navigation'>
+              <a class="previouspostslink" rel="prev" href="#">«</a>
+              <span class='current'>1</span>
+              <a class="page larger" href="#">2</a>
+              <a class="page larger" href="#">3</a>
+              <a class="nextpostslink" rel="next" href="#">»</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+      <div class="access">
+        <div class="access__inner inner">
+          <div class="access__map-wrap">
+            <div class="access__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207763.07103716696!2d139.41831505122724!3d35.5463421778204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1688630714995!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="access__info">
+            <address class="access__address">
+              〒123-4567<br>
+              東京都渋谷区1-2-3&emsp;渋谷ビル10F<br>
+              TEL:03-1234-5678<br>
+              FAX:03-1234-5679
+            </address>
+            <div class="access__btn-wrap btn-contact">
+              <a href="#">contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <h2 class="footer__logo">logo</h2>
+      <nav class="footer__nav">
+        <ul class="footer__items">
+          <li class="footer__item"><a href="index.html" class="footer__link">top</a></li>
+          <li class="footer__item"><a href="about.html" class="footer__link">about</a></li>
+          <li class="footer__item"><a href="works.html" class="footer__link">works</a></li>
+        </ul>
+      </nav>
+    </div>
+    <small class="footer__copyright">&copy;ALL&nbsp;Right&nbsp;Reserved.LOGO.INC</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@use 'foundation' as *;
+
+.faq {
+  background-image: url(/images/faq-sp.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  @include mq(md) {
+    background-image: url(/images/faq-pc.jpg);
+  }
+}
+
+.faq__inner {
+  position: relative;
+  padding: 110px 20px 50px;
+  @include mq(md) {
+      padding: 180px 25px 100px;
+  }
+}
