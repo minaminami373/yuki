@@ -22,4 +22,4 @@
 - JavaScriptの圧縮は未実施
 
 - ゆうきさんデザインカンプ_原本
-- yuki
+- gulp-yuki
