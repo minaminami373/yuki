@@ -1,0 +1,78 @@
+@use 'foundation' as *;
+
+.btn {
+  padding: prem(14) prem(60);
+  display: inline-block;
+  font-size: prem(15);
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid $orange;
+  color: $orange;
+  transition: .3s;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  @include mq(md){
+      color: $white;
+      background-color: $orange;
+      opacity: 1;
+  }
+}
+
+
+/*矢印と下線の形状*/
+.dli-arrow-right {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $orange;
+  line-height: 1;
+  position: relative;
+  width: 11px;
+  height: 0.1em;
+  margin-left: 10px;
+}
+
+.dli-arrow-right::after{
+  content: '';
+  /*絶対配置で矢印の位置を決める*/
+position: absolute;
+  top:-2px;
+  right:0;
+  /*矢印の形状*/
+  width: 5px;
+  height:1px;
+background:$orange;
+  transform: rotate(40deg);
+  /*アニメーションの指定*/
+  transition: all .3s;
+}
+
+/*hoverした際の移動*/
+.btnarrow4:hover::before{
+  left:20%;
+}
+
+.btnarrow4:hover::after{
+  right:-5%;
+}
+
+.btn-contact a {
+  position: relative;
+  color: $white;
+  background-color: $orange;
+  text-transform: uppercase;
+}
+
+.btn-contact a::after {
+  content: "";
+  margin-left:10px;
+  width: 11px;
+  height: 12px;
+  display: inline-block;
+  background-image: url(/images/Vector.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

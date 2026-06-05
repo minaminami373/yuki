@@ -1,0 +1,121 @@
+@use 'foundation' as *;
+
+.about-top {
+  padding: 50px 0 0;
+  @include mq(md) {
+    padding: 100px 0 0;
+  }
+}
+
+.about-top__inner {
+  position: relative;
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.about-top__inner::after {
+  content: "CREATIVE";
+  position: absolute;
+  z-index: -1;
+  top: 61%;
+  right: 0;
+  color: $grey2;
+  font-size: 64px;
+  font-weight: $bold;
+
+}
+
+.about-top__content {
+  margin: 30px 0;
+  text-align: left;
+  @include mq(md) {
+    margin: 100px 0 0 30px;
+    max-width: 523px;
+  }
+}
+
+.about-top__title {
+  font-size: 20px;
+  font-weight: $bold;
+  color: $orange;
+  line-height: 1.5;
+  @include mq(md) {
+    font-size: 32px;
+  }
+}
+
+.about-top__text {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 1.8;
+  @include mq(md) {
+    font-size: 15px;
+    line-height: 2;
+
+  }
+
+}
+
+.about-top__img {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-top__img::before {
+  content: "";
+  position: absolute;
+  background-color: $white;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.about-top__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-top__img:first-child{
+  margin-left: calc(50% - 50vw);
+  width: 100%;
+  @include mq(md) {
+    margin-bottom: 241px;
+    height: 334px;
+  }
+}
+
+.about-top__img:first-child::before {
+  transform: skewY(-80deg);
+  transform-origin: bottom right;
+}
+
+
+.about-top__img:last-child {
+  width: calc(100% + 20px);
+  margin: 0 -20px 0 0;
+  @include mq(md) {
+    margin-top: 130px;
+    height: 445px;
+    margin-right: calc(50% - 50vw);
+    width: 100%;
+  }
+
+}
+
+.about-top__img:last-child::before {
+  transform: skewY(-80deg);
+    transform-origin: bottom left;
+
+}
+
+.about-top__img:first-child img {
+  aspect-ratio: 342.69/228;
+}
+
+.about-top__img:last-child img {
+  aspect-ratio: 385.24/212;
+}

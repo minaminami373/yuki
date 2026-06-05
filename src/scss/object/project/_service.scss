@@ -1,0 +1,8 @@
+@use 'foundation' as *;
+
+.service {
+  padding: 60px 0 50px;
+  @include mq(md) {
+    padding: 130px 0 100px;
+  }
+}

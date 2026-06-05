@@ -1,0 +1,73 @@
+@use 'foundation' as *;
+
+.about-message {
+  padding-bottom: 113px;
+}
+
+.about-message-main-title-wrap {
+  @include mq(md) {
+    justify-self: start;
+  }
+}
+
+.about-message__wrap {
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 80%;
+    align-items: center;
+    justify-items: end;
+
+  }
+}
+
+.about-message__img {
+  margin-top: 30px;
+
+  @include mq(md) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 0;
+  }
+}
+
+.about-message__img img {
+  @include mq(md) {
+    height: 326px;
+    object-fit: contain;
+  }
+}
+
+.about-message__content {
+  text-align: left;
+}
+
+.about-message__title {
+  font-size: 20px;
+  color: $orange;
+  font-weight: $bold;
+  margin-top: 30px;
+  @include mq(md) {
+    font-size: 28px;
+  }
+}
+
+.about-message__text {
+  font-size: 14px;
+  font-weight: $medium;
+  margin-top: 25px;
+  @include mq(md) {
+    font-size: 15px;
+  }
+}
+
+.about-message__name {
+  font-size: 14px;
+  font-weight: $bold;
+  margin-top: 20px;
+  text-align: right;
+  @include mq(md) {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,27 @@
+@use 'foundation' as *;
+
+// .about-vision {
+//   position: relative;
+//   width: 100%;
+// }
+
+// .about-vision::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   background-color: $grey2;
+//   transform: skewY(-7deg);
+//   transform-origin: top right;
+//   z-index: -1;
+//   width: 100%;
+//   height: 100%;
+// }
+
+.about-vision__inner {
+  padding: 50px 25px 100px;
+  @include mq(md) {
+    padding: 100px 25px 200px;
+  }
+
+}
