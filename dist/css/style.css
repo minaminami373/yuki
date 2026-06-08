@@ -151,7 +151,7 @@ a {
   }
 }
 
-.btn {
+.c-btn {
   padding: 0.875rem 3.75rem;
   display: inline-block;
   font-size: 0.9375rem;
@@ -165,7 +165,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .btn:hover {
+  .c-btn:hover {
     color: #FFFFFF;
     background-color: #DE8430;
     opacity: 1;
@@ -208,14 +208,14 @@ a {
   right: -5%;
 }
 
-.btn-contact a {
+.c-btn--contact a {
   position: relative;
   color: #FFFFFF;
   background-color: #DE8430;
   text-transform: uppercase;
 }
 
-.btn-contact a::after {
+.c-btn--contact a::after {
   content: "";
   margin-left: 10px;
   width: 11px;
