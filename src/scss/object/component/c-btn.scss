@@ -1,6 +1,6 @@
 @use 'foundation' as *;
 
-.btn {
+.c-btn {
   padding: prem(14) prem(60);
   display: inline-block;
   font-size: prem(15);
@@ -13,7 +13,7 @@
   text-transform: uppercase;
 }
 
-.btn:hover {
+.c-btn:hover {
   @include mq(md){
       color: $white;
       background-color: $orange;
@@ -58,14 +58,14 @@ background:$orange;
   right:-5%;
 }
 
-.btn-contact a {
+.c-btn--contact a {
   position: relative;
   color: $white;
   background-color: $orange;
   text-transform: uppercase;
 }
 
-.btn-contact a::after {
+.c-btn--contact a::after {
   content: "";
   margin-left:10px;
   width: 11px;
