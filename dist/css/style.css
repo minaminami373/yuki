@@ -136,7 +136,7 @@ a {
   }
 }
 
-.inner {
+.l-inner {
   width: 100%;
   max-width: 1130px;
   margin-left: auto;
@@ -145,10 +145,37 @@ a {
   padding-left: 20px;
 }
 @media screen and (min-width: 768px) {
-  .inner {
+  .l-inner {
     padding-left: 25px;
     padding-right: 25px;
   }
+}
+
+/*矢印と下線の形状*/
+.c-arrow {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #DE8430;
+  line-height: 1;
+  position: relative;
+  width: 11px;
+  height: 0.1em;
+  margin-left: 10px;
+  transition: width 0.3s ease;
+}
+
+.c-arrow::after {
+  content: "";
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  top: -2px;
+  right: 0;
+  /*矢印の形状*/
+  width: 5px;
+  height: 1px;
+  background: #DE8430;
+  transform: rotate(40deg);
+  /*アニメーションの指定*/
 }
 
 .c-btn {
@@ -172,50 +199,19 @@ a {
   }
 }
 
-/*矢印と下線の形状*/
-.dli-arrow-right {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: #DE8430;
-  line-height: 1;
-  position: relative;
-  width: 11px;
-  height: 0.1em;
-  margin-left: 10px;
-}
-
-.dli-arrow-right::after {
-  content: "";
-  /*絶対配置で矢印の位置を決める*/
-  position: absolute;
-  top: -2px;
-  right: 0;
-  /*矢印の形状*/
-  width: 5px;
-  height: 1px;
-  background: #DE8430;
-  transform: rotate(40deg);
-  /*アニメーションの指定*/
-  transition: all 0.3s;
-}
-
-/*hoverした際の移動*/
-.btnarrow4:hover::before {
-  left: 20%;
-}
-
-.btnarrow4:hover::after {
-  right: -5%;
-}
-
-.c-btn--contact a {
+.c-btn--contact {
   position: relative;
   color: #FFFFFF;
   background-color: #DE8430;
   text-transform: uppercase;
+  transition: opacity 0.3s ease;
 }
 
-.c-btn--contact a::after {
+.c-btn--contact:hover {
+  opacity: 0.7;
+}
+
+.c-btn--contact::after {
   content: "";
   margin-left: 10px;
   width: 11px;
@@ -225,6 +221,15 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.c-btn:hover .c-arrow {
+  width: 21px;
+  background-color: #FFFFFF;
+}
+
+.c-btn:hover .c-arrow::after {
+  background-color: #FFFFFF;
 }
 
 .title-wrap,
