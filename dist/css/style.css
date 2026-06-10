@@ -232,55 +232,20 @@ a {
   background-color: #FFFFFF;
 }
 
-.title-wrap,
-.title-wrap {
-  position: relative;
-}
-
-.title-wrap::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 30px;
-  background-color: #DE8430;
-  left: 0;
-  top: 70px;
-}
-@media screen and (min-width: 768px) {
-  .title-wrap::after {
-    width: 50px;
-    top: 100px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .title-wrap-center {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .title-wrap-center::after {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 90px;
-  }
-}
-
-.title {
+.c-title {
   position: relative;
   font-size: 36px;
   line-height: 1;
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
-  .title {
+  .c-title {
     font-size: 60px;
     font-weight: 700;
   }
 }
 
-.title::before {
+.c-title::before {
   content: attr(data-title);
   position: absolute;
   z-index: -1;
@@ -291,42 +256,76 @@ a {
   font-size: 64px;
 }
 @media screen and (min-width: 768px) {
-  .title::before {
+  .c-title::before {
     font-size: 150px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .title-center::before {
+  .c-title--center::before {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
 }
 
-.sub-title {
+.c-title-wrap {
+  position: relative;
+}
+
+.c-title-wrap::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 30px;
+  background-color: #DE8430;
+  left: 0;
+  top: 70px;
+}
+@media screen and (min-width: 768px) {
+  .c-title-wrap::after {
+    width: 50px;
+    top: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .c-title-wrap--center {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .c-title-wrap--center::after {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90px;
+  }
+}
+
+.c-title__sub {
   position: relative;
   font-size: 12px;
   font-weight: 700;
   margin-top: 5px;
 }
 @media screen and (min-width: 768px) {
-  .sub-title {
+  .c-title__sub {
     font-size: 14px;
   }
 }
 
-.main-title {
+.c-title--main {
   font-size: 32px;
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
-  .main-title {
+  .c-title--main {
     font-size: 60px;
   }
 }
 
-.main-title-orange {
+.c-title__accent {
   color: #DE8430;
 }
 
