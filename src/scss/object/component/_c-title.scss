@@ -36,6 +36,9 @@
 
 .c-title-wrap {
   position: relative;
+  @include mq(md) {
+      // justify-self: start;
+  }
 }
 
 .c-title-wrap::after {

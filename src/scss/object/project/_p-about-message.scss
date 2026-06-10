@@ -1,28 +1,22 @@
 @use 'foundation' as *;
 
 
-.about-message {
+.p-about-message {
   padding-bottom: 113px;
 }
 
-.about-message-main-title-wrap {
-  @include mq(md) {
-    justify-self: start;
-  }
-}
-
-.about-message__wrap {
+.p-about-message__wrap {
   @include mq(md) {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 20% 80%;
     align-items: center;
     justify-items: end;
+    column-gap: 30px;
 
   }
 }
 
-.about-message__img {
+.p-about-message__img {
   margin-top: 30px;
 
   @include mq(md) {
@@ -33,14 +27,14 @@
   }
 }
 
-.about-message__img img {
+.p-about-message__img img {
   @include mq(md) {
     height: 326px;
     object-fit: contain;
   }
 }
 
-.about-message__content {
+.p-about-message__content {
   text-align: left;
   margin-top: 30px;
   @include mq(md) {
@@ -48,7 +42,7 @@
   }
 }
 
-.about-message__title {
+.p-about-message__title {
   font-size: 20px;
   color: $orange;
   font-weight: $bold;
@@ -57,7 +51,7 @@
   }
 }
 
-.about-message__text {
+.p-about-message__text {
   font-size: 14px;
   font-weight: $medium;
   margin-top: 25px;
@@ -66,7 +60,7 @@
   }
 }
 
-.about-message__name {
+.p-about-message__name {
   font-size: 14px;
   font-weight: $bold;
   margin-top: 20px;
