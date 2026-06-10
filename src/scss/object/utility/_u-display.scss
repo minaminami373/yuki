@@ -1,27 +1,28 @@
 @use 'foundation' as *;
 
-.sp-show {
+.u-sp-show {
   @include mq("md") {
   display: none;
     }
 }
 
-.sp-none {
+.u-sp-none {
   display: none;
   @include mq("md") {
     display: block;
       }
 }
 
-.md-none {
-  @include mq("md") {
-  display: none;
-    }
-}
-
-.md-show {
+.u-pc-show {
   display: none;
   @include mq("md") {
     display: block;
       }
 }
+
+.u-pc-none {
+  @include mq("md") {
+  display: none;
+    }
+}
+

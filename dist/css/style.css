@@ -329,36 +329,6 @@ a {
   color: #DE8430;
 }
 
-@media screen and (min-width: 768px) {
-  .sp-show {
-    display: none;
-  }
-}
-
-.sp-none {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .sp-none {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .md-none {
-    display: none;
-  }
-}
-
-.md-show {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .md-show {
-    display: block;
-  }
-}
-
 .about-background {
   background: linear-gradient(-80deg, #FFFFFF 0%, #FFFFFF 50%, #F4F4F4 50%, #F4F4F4 100%);
 }
@@ -2195,6 +2165,36 @@ a {
 @media screen and (min-width: 768px) {
   .works__btn {
     margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-sp-show {
+    display: none;
+  }
+}
+
+.u-sp-none {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-sp-none {
+    display: block;
+  }
+}
+
+.u-pc-show {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-pc-show {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-pc-none {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
