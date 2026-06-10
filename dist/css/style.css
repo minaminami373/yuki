@@ -289,10 +289,8 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .c-title-wrap--center {
-    text-align: center;
-  }
+.c-title-wrap--center {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -327,97 +325,6 @@ a {
 
 .c-title__accent {
   color: #DE8430;
-}
-
-.about-background {
-  background: linear-gradient(-80deg, #FFFFFF 0%, #FFFFFF 50%, #F4F4F4 50%, #F4F4F4 100%);
-}
-
-.about-company-list {
-  text-align: center;
-  margin-top: 45px;
-  text-transform: uppercase;
-}
-
-.about-company-list__item {
-  padding-bottom: 15px;
-  border-bottom: 1px solid #EBE8E2;
-}
-@media screen and (min-width: 768px) {
-  .about-company-list__item {
-    display: flex;
-    max-width: 526px;
-    margin: 0 auto;
-  }
-}
-
-.about-company-list__item:not(:first-child) {
-  padding-top: 15px;
-}
-
-.about-company-list__title {
-  color: #DE8430;
-  font-size: 15px;
-  font-weight: 700;
-}
-@media screen and (min-width: 768px) {
-  .about-company-list__title {
-    padding-left: 30px;
-    width: 40%;
-    text-align: left;
-  }
-}
-
-.about-company-list__name {
-  font-size: 15px;
-  font-weight: 500;
-  margin-top: 10px;
-}
-@media screen and (min-width: 768px) {
-  .about-company-list__name {
-    margin-top: 0;
-  }
-}
-
-.about-company__inner {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-@media screen and (min-width: 768px) {
-  .about-company__inner {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-
-.about-company__top-image img {
-  aspect-ratio: 375/105;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.about-company__top-image source {
-  aspect-ratio: 1440/350;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.about-company__inner {
-  background-image: url(/images/about-company-background-image-sp.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 768px) {
-  .about-company__inner {
-    background-image: url(/images/about-company-background-image-pc.jpg);
-    max-width: 1440px;
-  }
-}
-
-.about-company-main-title-wrap {
-  text-align: center;
 }
 
 .about-message {
@@ -462,13 +369,18 @@ a {
 
 .about-message__content {
   text-align: left;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .about-message__content {
+    margin-top: 60px;
+  }
 }
 
 .about-message__title {
   font-size: 20px;
   color: #DE8430;
   font-weight: 700;
-  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .about-message__title {
@@ -1780,6 +1692,93 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-about__background {
+  background: linear-gradient(-80deg, #FFFFFF 0%, #FFFFFF 50%, #F4F4F4 50%, #F4F4F4 100%);
+}
+
+.p-about-company__inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .p-about-company__inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.p-about-company__top-image img {
+  aspect-ratio: 375/105;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-about-company__top-image source {
+  aspect-ratio: 1440/350;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-about-company__inner {
+  background-image: url(/images/about-company-background-image-sp.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .p-about-company__inner {
+    background-image: url(/images/about-company-background-image-pc.jpg);
+    max-width: 1440px;
+  }
+}
+
+.p-about-company__list {
+  text-align: center;
+  margin-top: 45px;
+  text-transform: uppercase;
+}
+
+.p-about-company__item {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #EBE8E2;
+}
+@media screen and (min-width: 768px) {
+  .p-about-company__item {
+    display: flex;
+    max-width: 526px;
+    margin: 0 auto;
+  }
+}
+
+.p-about-company__item:not(:first-child) {
+  padding-top: 15px;
+}
+
+.p-about-company__title {
+  color: #DE8430;
+  font-size: 15px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .p-about-company__title {
+    padding-left: 30px;
+    width: 40%;
+    text-align: left;
+  }
+}
+
+.p-about-company__name {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .p-about-company__name {
+    margin-top: 0;
+  }
 }
 
 .pagenavi__inner {

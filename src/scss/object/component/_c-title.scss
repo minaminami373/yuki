@@ -53,9 +53,7 @@
 }
 
 .c-title-wrap--center {
-  @include mq(md) {
     text-align: center;
-  }
 }
 
 .c-title-wrap--center::after {

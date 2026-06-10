@@ -1,0 +1,74 @@
+@use 'foundation' as *;
+
+.p-about-company__inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include mq(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.p-about-company__top-image img {
+  aspect-ratio: 375 / 105;
+  width: 100%;
+  object-fit: cover;
+}
+
+.p-about-company__top-image source {
+  aspect-ratio: 1440 / 350;
+  width: 100%;
+  object-fit: cover;
+}
+
+.p-about-company__inner {
+  background-image: url(/images/about-company-background-image-sp.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  @include mq(md) {
+    background-image: url(/images/about-company-background-image-pc.jpg);
+    max-width: 1440px;
+  }
+}
+
+.p-about-company__list {
+  text-align: center;
+  margin-top: 45px;
+  text-transform: uppercase;
+}
+
+.p-about-company__item {
+  padding-bottom: 15px;
+  border-bottom: 1px solid $grey3;
+  @include mq(md) {
+    display: flex;
+    max-width: 526px;
+    margin: 0 auto;
+  }
+}
+
+.p-about-company__item:not(:first-child) {
+  padding-top: 15px;
+}
+
+.p-about-company__title {
+  color: $orange;
+  font-size: 15px;
+  font-weight: $bold;
+  @include mq(md) {
+    padding-left: 30px;
+    width: 40%;
+    text-align: left;
+  }
+}
+
+.p-about-company__name {
+  font-size: 15px;
+  font-weight: $medium;
+  margin-top: 10px;
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+

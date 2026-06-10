@@ -1,5 +1,6 @@
 @use 'foundation' as *;
 
+
 .about-message {
   padding-bottom: 113px;
 }
@@ -41,13 +42,16 @@
 
 .about-message__content {
   text-align: left;
+  margin-top: 30px;
+  @include mq(md) {
+    margin-top: 60px;
+  }
 }
 
 .about-message__title {
   font-size: 20px;
   color: $orange;
   font-weight: $bold;
-  margin-top: 30px;
   @include mq(md) {
     font-size: 28px;
   }
