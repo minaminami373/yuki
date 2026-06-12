@@ -326,80 +326,6 @@ a {
   color: #DE8430;
 }
 
-.access {
-  padding-top: 50px;
-  background-color: #623A14;
-}
-@media screen and (min-width: 768px) {
-  .access {
-    padding-top: 100px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .access__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-  }
-}
-
-.access__info {
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .access__info {
-    text-align: left;
-  }
-}
-
-.access__address {
-  font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  margin-top: 25px;
-  color: #FFFFFF;
-}
-@media screen and (min-width: 768px) {
-  .access__address {
-    font-size: 15px;
-  }
-}
-
-.access__btn-wrap {
-  margin-top: 30px;
-}
-
-.access__btn-wrap a {
-  padding: 10px 26px;
-}
-
-.access__map-wrap {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .access__map-wrap {
-    margin-top: 0;
-    max-width: 630px;
-  }
-}
-
-.access__map {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  padding-top: 47.5%;
-}
-
-.access__map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .contact__inner {
   margin: auto;
   padding: 5rem 0.625rem;
@@ -1643,6 +1569,76 @@ a {
     margin-top: 40px;
     text-align: left;
   }
+}
+
+.p-home-access {
+  padding-top: 50px;
+  background-color: #623A14;
+}
+@media screen and (min-width: 768px) {
+  .p-home-access {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-home-access__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+
+.p-home-access__info {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-home-access__info {
+    text-align: left;
+  }
+}
+
+.p-home-access__address {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 25px;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .p-home-access__address {
+    font-size: 15px;
+  }
+}
+
+.p-home-access__btn {
+  margin-top: 30px;
+}
+
+.p-home-access__map-wrap {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-home-access__map-wrap {
+    margin-top: 0;
+    max-width: 630px;
+  }
+}
+
+.p-home-access__map {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  padding-top: 47.5%;
+}
+
+.p-home-access__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .p-home-faq {
