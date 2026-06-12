@@ -1,13 +1,13 @@
 @use 'foundation' as *;
 
-.about {
+.p-home-about {
   padding: 60px 0 50px;
   @include mq(md) {
     padding: 100px 0 0;
   }
 }
 
-.about__inner {
+.p-home-about__inner {
   @include mq(md) {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -15,7 +15,7 @@
   }
 }
 
-.about__title-wrap {
+.p-home-about__title-wrap {
   @include mq(md) {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -26,7 +26,7 @@
   }
 }
 
-.about__img {
+.p-home-about__img {
   margin: 45px calc(50% - 50vw) 0;
   width: 100vw;
   z-index: -10;
@@ -37,7 +37,7 @@
   }
 }
 
-.about__img img {
+.p-home-about__img img {
   width: 100%;
   @include mq(md) {
     height: 485px;
@@ -46,7 +46,7 @@
   }
 }
 
-.about__content {
+.p-home-about__content {
   margin-top: 20px;
   @include mq(md) {
     margin: 0 0 87px 0;
@@ -56,7 +56,7 @@
   }
 }
 
-.about__text {
+.p-home-about__text {
   font-size: 14px;
   line-height: 1.5;
   @include mq(md) {
@@ -64,7 +64,7 @@
   }
 }
 
-.about__btn {
+.p-home-about__btn {
   margin-top: 30px;
   text-align: center;
   @include mq(md) {
