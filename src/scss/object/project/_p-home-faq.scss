@@ -1,6 +1,24 @@
 @use 'foundation' as *;
 
-.faq__list {
+.p-home-faq {
+  background-image: url(/images/faq-sp.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  @include mq(md) {
+    background-image: url(/images/faq-pc.jpg);
+  }
+}
+
+.p-home-faq__inner {
+  position: relative;
+  padding: 110px 20px 50px;
+  @include mq(md) {
+      padding: 180px 25px 100px;
+  }
+}
+
+.p-home-faq__items {
   max-width: 800px;
   background-color: $white;
   padding: 73px 20px 20px;
@@ -11,7 +29,7 @@
   }
 }
 
-.faq__title-wrap {
+.p-home-faq__title-wrap {
   z-index: 1;
   position: absolute;
   top: 90px;
@@ -23,19 +41,19 @@
   }
 }
 
-.faq-list__item {
+.p-home-faq__item {
 		background-color: $white;
     box-shadow: 0 0 prem(40) 0 rgba(0, 0, 0, .05);
 }
 
-.faq-list__item + .faq-list__item {
+.p-home-faq__item + .p-home-faq__item {
     margin-top: 10px;
     @include mq(md) {
       margin-top: 15px;
     }
 }
 
-.faq-list__item-question {
+.p-home-faq__question {
     padding: 15px 40px 15px 31px;
     position: relative;
     font-size: 14px;
@@ -50,7 +68,7 @@
     }
 }
 
-.faq-list__item-question::before {
+.p-home-faq__question::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -67,17 +85,17 @@
     }
 }
 
-.faq-list__item-question.is-open::before {
+.p-home-faq__question.is-open::before {
     transform: translateY(-50%) rotate(315deg);
 }
 
-.faq-list__item-question span {
+.p-home-faq__question span {
     margin-left: 20px;
     display: inline-block;
     color: $white;
 }
 
-.faq-list__item-answer {
+.p-home-faq__answer {
     padding: 15px 15px 15px 31px;
     display: none;
     font-size: 13px;
@@ -88,7 +106,7 @@
     }
 }
 
-.faq-list__item-answer span {
+.p-home-faq__answer span {
   font-size: 14px;
   font-weight: $bold;
    margin-left: 20px;
