@@ -1,6 +1,6 @@
 @use 'foundation' as *;
 
-.footer {
+.p-footer {
   background-color: $brown;
   color: $white;
   text-align: center;
@@ -8,7 +8,7 @@
 }
 
 
-.footer__logo {
+.p-footer__logo {
   font-size: 36px;
   font-weight: $bold;
   padding-top: 50px;
@@ -18,7 +18,7 @@
   }
 }
 
-.footer__items {
+.p-footer__items {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
@@ -31,16 +31,16 @@
   }
 }
 
-.footer__item:not(:first-child) {
+.p-footer__item:not(:first-child) {
   padding-left: 10px;
   border-left: 1px solid $white;
 }
 
-.footer__item:not(:last-child) {
+.p-footer__item:not(:last-child) {
   padding-right: 10px;
 }
 
-.footer__copyright {
+.p-footer__copyright {
   display: block;
   margin-top: 30px;
   font-size: 10px;

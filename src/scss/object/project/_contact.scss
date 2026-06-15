@@ -5,7 +5,7 @@
   padding: prem(80) prem(10);
   max-width: prem(600);
   width: 100%;
-  
+
   @include mq(md){
       padding: prem(90) prem(25);
       max-width: prem(1200);

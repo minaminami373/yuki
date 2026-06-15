@@ -764,61 +764,6 @@ a {
   }
 }
 
-.footer {
-  background-color: #623A14;
-  color: #FFFFFF;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.footer__logo {
-  font-size: 36px;
-  font-weight: 700;
-  padding-top: 50px;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 768px) {
-  .footer__logo {
-    padding-top: 100px;
-  }
-}
-
-.footer__items {
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 25px;
-}
-@media screen and (min-width: 768px) {
-  .footer__items {
-    font-size: 15px;
-    margin-top: 30px;
-  }
-}
-
-.footer__item:not(:first-child) {
-  padding-left: 10px;
-  border-left: 1px solid #FFFFFF;
-}
-
-.footer__item:not(:last-child) {
-  padding-right: 10px;
-}
-
-.footer__copyright {
-  display: block;
-  margin-top: 30px;
-  font-size: 10px;
-  font-weight: 500;
-}
-@media screen and (min-width: 768px) {
-  .footer__copyright {
-    margin-top: 70px;
-  }
-}
-
 .header {
   height: 2.5rem;
 }
@@ -1480,6 +1425,61 @@ a {
 
 .p-about__background {
   background: linear-gradient(-80deg, #FFFFFF 0%, #FFFFFF 50%, #F4F4F4 50%, #F4F4F4 100%);
+}
+
+.p-footer {
+  background-color: #623A14;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.p-footer__logo {
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__logo {
+    padding-top: 100px;
+  }
+}
+
+.p-footer__items {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__items {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+}
+
+.p-footer__item:not(:first-child) {
+  padding-left: 10px;
+  border-left: 1px solid #FFFFFF;
+}
+
+.p-footer__item:not(:last-child) {
+  padding-right: 10px;
+}
+
+.p-footer__copyright {
+  display: block;
+  margin-top: 30px;
+  font-size: 10px;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__copyright {
+    margin-top: 70px;
+  }
 }
 
 .p-home-about {
@@ -2156,15 +2156,6 @@ a {
   color: #FFFFFF;
   background-color: #DE8430;
   border-color: #DE8430;
-}
-
-.service {
-  padding: 60px 0 50px;
-}
-@media screen and (min-width: 768px) {
-  .service {
-    padding: 130px 0 100px;
-  }
 }
 
 @media screen and (min-width: 768px) {
