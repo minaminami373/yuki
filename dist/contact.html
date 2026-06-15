@@ -34,54 +34,63 @@
   <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-  <header class="header l-header">
-    <div class="header__inner">
-      <h1 class="header__logo">
-        <a href="index.html">
-          <img src="/images/logo.png" alt="LOGO">
-        </a>
-      </h1>
-      <nav class="header__nav">
-        <ul class="header__nav-items">
-          <li class="header__nav-item">
+<header class="p-header l-header">
+  <div class="p-header__inner">
+
+    <h1 class="p-header__logo">
+      <a href="index.html">
+        <img src="/images/logo.png" alt="LOGO">
+      </a>
+    </h1>
+
+    <nav class="p-header__nav">
+      <ul class="p-header__nav-list">
+        <li class="p-header__nav-item">
+          <a href="index.html">top</a>
+        </li>
+        <li class="p-header__nav-item">
+          <a href="about.html">about</a>
+        </li>
+        <li class="p-header__nav-item">
+          <a href="works.html">works</a>
+        </li>
+        <li class="p-header__nav-item p-header__nav-item--contact">
+          <a href="contact.html" class="c-btn c-btn--contact" target="_blank" rel="noopener">
+            contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="p-header__hamburger js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="p-header__drawer js-drawer">
+      <nav class="p-header__drawer-nav">
+        <ul class="p-header__drawer-list">
+          <li class="p-header__drawer-item">
             <a href="index.html">top</a>
           </li>
-          <li class="header__nav-item">
+          <li class="p-header__drawer-item">
             <a href="about.html">about</a>
           </li>
-          <li class="header__nav-item">
+          <li class="p-header__drawer-item">
             <a href="works.html">works</a>
           </li>
-          <li class="header__nav-item header__nav-item--contact">
-            <a href="index.html" class="c-btn c-btn--contact" target="_blank" rel="noopener">contact</a>
+          <li class="p-header__drawer-item p-header__drawer-item--contact">
+            <a href="contact.html" target="_blank" rel="noopener">
+              contact
+            </a>
           </li>
         </ul>
       </nav>
-      <button class="header__hamburger js-hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="header__drawer js-drawer">
-        <nav class="header__drawer-nav">
-          <ul class="header__drawer-items">
-            <li class="header__drawer-item">
-              <a href="index.html">top</a>
-            </li>
-            <li class="header__drawer-item">
-              <a href="about.html">about</a>
-            </li>
-            <li class="header__drawer-item">
-              <a href="works.html">works</a>
-            </li>
-            <li class="header__drawer-item header__drawer-item--contact">
-              <a href="index.html" target="_blank" rel="noopener">contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
     </div>
-  </header>
+
+  </div>
+</header>
 <div class="p-contact">
   <div class="p-contact__inner">
     <ol class="p-contact__status-list">

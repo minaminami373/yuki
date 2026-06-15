@@ -1,0 +1,209 @@
+@use 'foundation' as *;
+
+.p-header {
+  height: prem(40);
+
+  @include mq("md") {
+    height: prem(70);
+  }
+}
+
+/* ========================
+  inner
+======================== */
+.p-header__inner {
+  padding-left: prem(15);
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+
+  @include mq("md") {
+    padding: 0 prem(50);
+  }
+}
+
+/* ========================
+  logo
+======================== */
+.p-header__logo {
+  max-width: prem(74);
+  width: 100%;
+  height: inherit;
+
+  @include mq("md") {
+    max-width: prem(100);
+  }
+
+  a {
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* ========================
+  nav (PC)
+======================== */
+.p-header__nav {
+  display: none;
+  height: inherit;
+
+  @include mq("md") {
+    display: block;
+  }
+}
+
+.p-header__nav-list {
+  display: flex;
+  height: inherit;
+}
+
+.p-header__nav-item {
+  height: inherit;
+
+  a {
+    padding: 0 prem(15);
+    height: inherit;
+    display: flex;
+    align-items: center;
+    font-size: prem(15);
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+.p-header__nav-item--contact {
+  margin-left: prem(15);
+  display: flex;
+  align-items: center;
+
+  a {
+    padding: 10px 20px;
+  }
+}
+
+/* ========================
+  hamburger
+======================== */
+.p-header__hamburger {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  position: relative;
+  z-index: 999;
+  width: prem(40);
+  height: inherit;
+  background-color: $orange;
+  cursor: pointer;
+  transition: .3s;
+
+  @include mq("md") {
+    display: none;
+  }
+
+  span {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: prem(15);
+    height: 1px;
+    background-color: $white;
+    transition: .5s;
+
+    &:nth-of-type(1) { top: prem(-4); }
+    &:nth-of-type(2) { top: 0; }
+    &:nth-of-type(3) { top: prem(4); }
+  }
+
+  &.is-open {
+    background-color: transparent;
+
+    span {
+      &:nth-of-type(1) {
+        top: 0;
+        transform: translateX(-50%) rotate(45deg);
+      }
+
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+
+      &:nth-of-type(3) {
+        top: prem(-2);
+        transform: translateX(-50%) rotate(-45deg);
+      }
+    }
+  }
+}
+
+/* ========================
+  drawer
+======================== */
+.p-header__drawer {
+  padding: prem(228) 0;
+  position: absolute;
+  z-index: 900;
+  top: 0;
+  right: -120%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($brown, .95);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  transition: .6s;
+  opacity: .95;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.is-open {
+    right: 0;
+  }
+}
+
+.p-header__drawer-list {
+  text-align: center;
+}
+
+.p-header__drawer-item {
+  a {
+    padding: prem(15) 0;
+    display: block;
+    font-size: prem(36);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: $white;
+    text-transform: uppercase;
+    transition: .3s;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  &--contact {
+    a::after {
+      content: "";
+      margin-bottom: prem(5);
+      margin-left: prem(20);
+      width: prem(15);
+      height: prem(15);
+      display: inline-block;
+      background-image: url(/images/Vector.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
