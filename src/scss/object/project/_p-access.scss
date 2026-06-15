@@ -1,6 +1,6 @@
 @use 'foundation' as *;
 
-.p-home-access {
+.p-access {
   padding-top: 50px;
   background-color: $brown;
   @include mq(md) {
@@ -8,7 +8,7 @@
   }
 }
 
-.p-home-access__inner {
+.p-access__inner {
   @include mq(md) {
     display: flex;
     justify-content: space-between;
@@ -17,14 +17,14 @@
   }
 }
 
-.p-home-access__info {
+.p-access__info {
     text-align: center;
     @include mq(md){
         text-align: left;
     }
 }
 
-.p-home-access__address {
+.p-access__address {
     font-size: 14px;
     font-weight: $medium;
     font-style: normal;
@@ -36,11 +36,11 @@
 
 }
 
-.p-home-access__btn {
+.p-access__btn {
     margin-top: 30px;
 }
 
-.p-home-access__map-wrap {
+.p-access__map-wrap {
     width: 100%;
     @include mq(md){
         margin-top: 0;
@@ -48,14 +48,14 @@
     }
 }
 
-.p-home-access__map {
+.p-access__map {
     position: relative;
     width: 100%;
     height: 300px;
     padding-top: 47.5%;
 }
 
-.p-home-access__map iframe {
+.p-access__map iframe {
     position: absolute;
     top: 0;
     left: 0;
