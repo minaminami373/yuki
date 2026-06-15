@@ -82,81 +82,121 @@
       </div>
     </div>
   </header>
-  <div class="contact">
-    <div class="contact__inner">
-      <ol class="contact__status-list">
-        <li class="contact__status-item contact__status-item--current">
-          <p class="contact__status-text">入力</p>
-        </li>
-        <li class="contact__status-item">
-          <p class="contact__status-text">確認</p>
-        </li>
-        <li class="contact__status-item">
-          <p class="contact__status-text">送信完了</p>
-        </li>
-      </ol>
-      <div class="contact__text-wrap">
-        <p class="contact__text">下記のお問い合わせフォームをご記入の上、お問い合わせください。</p>
-      </div>
-      <form class="contact__form" action="">
-        <dl class="contact__form-wrap contact__form-wrap--checkbox">
-          <dt class="contact__form-label">ご要望<span>必須</span></dt>
-          <dd class="contact__form-checkbox">
-            <label><input type="checkbox" name="route" value="資料請求"><span>資料請求</span></label>
-            <label><input type="checkbox" name="route" value="〇〇のお問い合わせ"><span>〇〇のお問い合わせ</span></label>
-            <label><input type="checkbox" name="route" value="お見積もりのご依頼"><span>お見積もりのご依頼</span></label>
-            <label><input type="checkbox" name="route" value="その他"><span>その他</span></label>
-          </dd>
-        </dl>
-        <dl class="contact__form-wrap">
-          <dt class="contact__form-label">お名前<span>必須</span></dt>
-          <dd class="contact__form-input">
-            <input type="text" placeholder="例）山田 太郎">
-          </dd>
-        </dl>
-        <dl class="contact__form-wrap">
-          <dt class="contact__form-label">会社名<span>必須</span></dt>
-          <dd class="contact__form-input">
-            <input type="text" placeholder="例）学サポ株式会社">
-          </dd>
-        </dl>
-        <dl class="contact__form-wrap">
-          <dt class="contact__form-label">電話番号</dt>
-          <dd class="contact__form-input">
-            <input type="tel" placeholder="例）09012345678">
-          </dd>
-        </dl>
-        <dl class="contact__form-wrap">
-          <dt class="contact__form-label">メールアドレス</dt>
-          <dd class="contact__form-input">
-            <input type="email" placeholder="例）sample@sample.com">
-          </dd>
-        </dl>
-        <dl class="contact__form-wrap">
-          <dt class="contact__form-label">ご住所</dt>
-          <dd class="contact__form-input">
-            <input type="text" placeholder="例）島根県松江市朝日町〇〇">
-          </dd>
-        </dl>
-        <dl class="contact__form-wrap">
-          <dt class="contact__form-label">お問い合わせ内容<span>必須</span></dt>
-          <dd class="contact__form-textarea">
-            <textarea name="message" placeholder="ご自由にご記入ください。"></textarea>
-          </dd>
-        </dl>
-        <div class="contact__form-privacy">
-          <label>
-            <input type="checkbox" name="privacy-policy" value="agree">
-            <span><a href="#">個人情報保護方針</a>に同意する。</span>
-          </label>
-        </div>
-        <div class="contact__form-submit">
-          <input type="submit" value="送信">
-          <div class="contact__form-submit-bg"></div>
-        </div>
-      </form>
+<div class="p-contact">
+  <div class="p-contact__inner">
+    <ol class="p-contact__status-list">
+      <li class="p-contact__status-item p-contact__status-item--current">
+        <p class="p-contact__status-text">入力</p>
+      </li>
+      <li class="p-contact__status-item">
+        <p class="p-contact__status-text">確認</p>
+      </li>
+      <li class="p-contact__status-item">
+        <p class="p-contact__status-text">送信完了</p>
+      </li>
+    </ol>
+
+    <div class="p-contact__text-wrap">
+      <p class="p-contact__text">
+        下記のお問い合わせフォームをご記入の上、お問い合わせください。
+      </p>
     </div>
+
+    <form class="p-contact__form" action="">
+      <dl class="p-contact__form-wrap p-contact__form-wrap--checkbox">
+        <dt class="p-contact__form-label">
+          ご要望<span>必須</span>
+        </dt>
+        <dd class="p-contact__form-checkbox">
+          <label>
+            <input type="checkbox" name="route" value="資料請求">
+            <span>資料請求</span>
+          </label>
+          <label>
+            <input type="checkbox" name="route" value="〇〇のお問い合わせ">
+            <span>〇〇のお問い合わせ</span>
+          </label>
+          <label>
+            <input type="checkbox" name="route" value="お見積もりのご依頼">
+            <span>お見積もりのご依頼</span>
+          </label>
+          <label>
+            <input type="checkbox" name="route" value="その他">
+            <span>その他</span>
+          </label>
+        </dd>
+      </dl>
+
+      <dl class="p-contact__form-wrap">
+        <dt class="p-contact__form-label">
+          お名前<span>必須</span>
+        </dt>
+        <dd class="p-contact__form-input">
+          <input type="text" placeholder="例）山田 太郎">
+        </dd>
+      </dl>
+
+      <dl class="p-contact__form-wrap">
+        <dt class="p-contact__form-label">
+          会社名<span>必須</span>
+        </dt>
+        <dd class="p-contact__form-input">
+          <input type="text" placeholder="例）学サポ株式会社">
+        </dd>
+      </dl>
+
+      <dl class="p-contact__form-wrap">
+        <dt class="p-contact__form-label">
+          電話番号
+        </dt>
+        <dd class="p-contact__form-input">
+          <input type="tel" placeholder="例）09012345678">
+        </dd>
+      </dl>
+
+      <dl class="p-contact__form-wrap">
+        <dt class="p-contact__form-label">
+          メールアドレス
+        </dt>
+        <dd class="p-contact__form-input">
+          <input type="email" placeholder="例）sample@sample.com">
+        </dd>
+      </dl>
+
+      <dl class="p-contact__form-wrap">
+        <dt class="p-contact__form-label">
+          ご住所
+        </dt>
+        <dd class="p-contact__form-input">
+          <input type="text" placeholder="例）島根県松江市朝日町〇〇">
+        </dd>
+      </dl>
+
+      <dl class="p-contact__form-wrap">
+        <dt class="p-contact__form-label">
+          お問い合わせ内容<span>必須</span>
+        </dt>
+        <dd class="p-contact__form-textarea">
+          <textarea name="message" placeholder="ご自由にご記入ください。"></textarea>
+        </dd>
+      </dl>
+
+      <div class="p-contact__form-privacy">
+        <label>
+          <input type="checkbox" name="privacy-policy" value="agree">
+          <span>
+            <a href="#">個人情報保護方針</a>に同意する。
+          </span>
+        </label>
+      </div>
+
+      <div class="p-contact__form-submit">
+        <input type="submit" value="送信">
+        <div class="p-contact__form-submit-bg"></div>
+      </div>
+    </form>
   </div>
+</div>
 </main>
 
   <footer class="p-footer">
