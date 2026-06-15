@@ -136,6 +136,14 @@ a {
   }
 }
 
+.l-header {
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 .l-inner {
   width: 100%;
   max-width: 1130px;
@@ -522,14 +530,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-
-.layout-header {
-  position: fixed;
-  z-index: 900;
-  top: 0;
-  right: 0;
-  left: 0;
 }
 
 .mv__title-wrap.main-mv__title-wrap {
