@@ -1,0 +1,27 @@
+@use 'foundation' as *;
+
+.p-works__inner {
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+
+.p-works__content {
+  display: block;
+
+  @include mq(md) {
+      display: flex;
+  align-items: center;
+
+  }
+}
+
+.p-works__lead {
+  margin-top: 30px;
+
+  @include mq(md) {
+  font-size: 14px;
+  margin-left: 100px;
+  margin-top: 0px;
+
+  }
+}
