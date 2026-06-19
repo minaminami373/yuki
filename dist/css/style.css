@@ -136,6 +136,61 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.l-footer {
+  background-color: #623A14;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.l-footer__logo {
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .l-footer__logo {
+    padding-top: 100px;
+  }
+}
+
+.l-footer__items {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+@media screen and (min-width: 768px) {
+  .l-footer__items {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+}
+
+.l-footer__item:not(:first-child) {
+  padding-left: 10px;
+  border-left: 1px solid #FFFFFF;
+}
+
+.l-footer__item:not(:last-child) {
+  padding-right: 10px;
+}
+
+.l-footer__copyright {
+  display: block;
+  margin-top: 30px;
+  font-size: 10px;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .l-footer__copyright {
+    margin-top: 70px;
+  }
+}
+
 .l-header {
   position: fixed;
   z-index: 900;
@@ -1169,61 +1224,6 @@ select {
 @media screen and (min-width: 768px) {
   .p-contact__form-submit-bg::after {
     top: 2.3125rem;
-  }
-}
-
-.p-footer {
-  background-color: #623A14;
-  color: #FFFFFF;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.p-footer__logo {
-  font-size: 36px;
-  font-weight: 700;
-  padding-top: 50px;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 768px) {
-  .p-footer__logo {
-    padding-top: 100px;
-  }
-}
-
-.p-footer__items {
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 25px;
-}
-@media screen and (min-width: 768px) {
-  .p-footer__items {
-    font-size: 15px;
-    margin-top: 30px;
-  }
-}
-
-.p-footer__item:not(:first-child) {
-  padding-left: 10px;
-  border-left: 1px solid #FFFFFF;
-}
-
-.p-footer__item:not(:last-child) {
-  padding-right: 10px;
-}
-
-.p-footer__copyright {
-  display: block;
-  margin-top: 30px;
-  font-size: 10px;
-  font-weight: 500;
-}
-@media screen and (min-width: 768px) {
-  .p-footer__copyright {
-    margin-top: 70px;
   }
 }
 
