@@ -1,6 +1,6 @@
 @use 'foundation' as *;
 
-.pagenavi__inner {
+.p-pagenavi__inner {
   margin: 60px auto 0;
   padding: 0 20px;
   max-width: 600px;
@@ -11,13 +11,13 @@
   }
 }
 
-.pagenavi .wp-pagenavi {
+.p-pagenavi .wp-pagenavi {
   clear: both;
   text-align: center;
 }
 
-.pagenavi .wp-pagenavi a,
-.pagenavi .wp-pagenavi span {
+.p-pagenavi .wp-pagenavi a,
+.p-pagenavi .wp-pagenavi span {
   margin: 0 8px;
   padding: 6px 10px;
   font-size: 14px;
@@ -28,14 +28,14 @@
   transition: .3s;
 }
 
-.pagenavi .wp-pagenavi a:hover {
+.p-pagenavi .wp-pagenavi a:hover {
 color: $white;
 background-color: $orange;
 border-color: $orange;
   opacity: 1;
 }
 
-.pagenavi .wp-pagenavi .current {
+.p-pagenavi .wp-pagenavi .current {
 color: $white;
 background-color: $orange;
 border-color: $orange;
