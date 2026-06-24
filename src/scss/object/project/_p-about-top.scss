@@ -15,14 +15,17 @@
 }
 
 .p-about-top__inner::after {
+  @include mq(md) {
   content: "CREATIVE";
   position: absolute;
   z-index: -1;
-  top: 61%;
-  right: 0;
+  top: 71%;
+  left: 0;
   color: $grey2;
-  font-size: 64px;
+  font-size: 150px;
   font-weight: $bold;
+
+  }
 
 }
 
