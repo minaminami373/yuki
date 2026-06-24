@@ -21,5 +21,5 @@
 - 画像の圧縮を実施
 - JavaScriptの圧縮は未実施
 
-- ゆうきさんデザインカンプ_原本
+- yuki_html
 - gulp-yuki
